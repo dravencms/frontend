@@ -1,0 +1,34 @@
+{
+  "name": "dravencms/frontend",
+  "type": "dravencms-package",
+  "description": "DravenCMS Frontend",
+  "keywords": [
+    "dravencms",
+    "frontend"
+  ],
+  "license": [
+    "LGPL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "Adam Schubert"
+    }
+  ],
+  "require": {
+    "nette/di": "^3.0.9"
+  },
+  "autoload": {
+    "psr-0": {
+      "Dravencms\\": "src/"
+    }
+  },
+  "extra": {
+    "dravencms": {
+      "configuration": {
+        "extensions": {
+          "base": "Dravencms\\Frontend\\DI\\FrontendExtension"
+        }
+      }
+    }
+  }
+}
