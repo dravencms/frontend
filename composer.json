@@ -24,11 +24,7 @@
   },
   "extra": {
     "dravencms": {
-      "configuration": {
-        "extensions": {
-          "base": "Dravencms\\Frontend\\DI\\FrontendExtension"
-        }
-      }
+      "configuration": "dravencms.config.neon"
     }
   }
 }

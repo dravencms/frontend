@@ -1,0 +1,2 @@
+extensions:
+    frontend: Dravencms\Frontend\DI\FrontendExtension
