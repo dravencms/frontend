@@ -4,10 +4,7 @@ namespace Dravencms\Frontend\DI;
 
 use Dravencms\Frontend\Frontend;
 use Dravencms\Frontend\ITemplate;
-use Kdyby\Console\DI\ConsoleExtension;
 use Nette;
-use Nette\DI\Compiler;
-use Nette\DI\Configurator;
 
 /**
  * Class BaseExtension
