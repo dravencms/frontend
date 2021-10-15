@@ -11,7 +11,7 @@ use Dravencms\Frontend\ITemplate;
 
 class BasePresenter extends \Dravencms\BasePresenter
 {
-    /** @var Frontend */
+    /** @var Frontend @inject */
     public $frontend;
 
     public function startup(): void
@@ -27,6 +27,8 @@ class BasePresenter extends \Dravencms\BasePresenter
         if ($found = $this->frontend->findTemplate($layout)) {
             $list[] = $found->getPath();
         }
+
+        return $list;
     }
 
     /**
