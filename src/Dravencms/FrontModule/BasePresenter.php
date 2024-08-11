@@ -8,6 +8,8 @@ namespace Dravencms\FrontModule;
 
 use Dravencms\Frontend\Frontend;
 use Dravencms\Frontend\ITemplate;
+use WebLoader\Nette\CssLoader;
+use WebLoader\Nette\JavaScriptLoader;
 
 class BasePresenter extends \Dravencms\BasePresenter
 {
@@ -38,4 +40,21 @@ class BasePresenter extends \Dravencms\BasePresenter
     {
         return $this->frontend->findTemplate($this->getLayoutName());
     }
+
+       /**
+     * @return \WebLoader\Nette\CssLoader
+     */
+    public function createComponentCss(): CssLoader
+    {
+        return $this->webLoader->createCssLoader('frontend');
+    }
+
+    /**
+     * @return JavaScriptLoader
+     */
+    public function createComponentJs(): JavaScriptLoader
+    {
+        return $this->webLoader->createJavaScriptLoader('frontend');
+    }
+
 }
