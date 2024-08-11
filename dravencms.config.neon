@@ -1,2 +1,9 @@
 extensions:
     frontend: Dravencms\Frontend\DI\FrontendExtension
+
+webloader:
+    js:
+        frontend: 
+
+    css:
+        frontend:
