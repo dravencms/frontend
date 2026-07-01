@@ -1,6 +1,13 @@
 extensions:
     frontend: Dravencms\Frontend\DI\FrontendExtension
 
+services:
+    application.errorPresenter:
+        class: Dravencms\FrontModule\ErrorPresenter
+
+    application.error4xxPresenter:
+        class: Dravencms\FrontModule\Error4xxPresenter
+
 webloader:
     js:
         frontend: 
